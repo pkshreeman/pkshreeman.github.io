@@ -1,0 +1,123 @@
+.padme{
+  add.class("row");
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+button{
+  width:150px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+
+}
+.topheaderimage {
+  max-width: 35px;
+  padding: 3px;
+}
+
+.nonmoving{
+  z-index: 10;
+  position: fixed;
+  margin: 25px 25px 0px 25px;
+  padding: 0;
+}
+
+.iconme{
+  border-color: gray;
+  border-width: thin;
+  border-radius: 25px;
+  margin: 25px;
+  padding: 0;
+}
+
+.borline {
+  color: white;
+  font-family: "Kaushan Scipt", cursive;
+  font-size: 25px;
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 40px;
+  margin: 2.5% 20% 2.5% 20%;
+  padding: 0;
+  text-align: center;
+  background-color: gray;
+  opacity: 0.75;
+}
+
+.sourcelink a {
+  color: black;
+}
+
+body{font:13px/1.1 Kaushan Scipt,sans-serif;
+  background-color: black;
+  background-image: url('../img/sun.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+section {
+    min-height: 1000px;
+    position: relative;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+section:nth-of-type(1){height:1000px;}
+section:nth-of-type(2){height:1200px;}
+
+
+#firstpart>div:nth-of-type(1){
+    background: url(../img/GreetingBW.png) 50% 0  no-repeat fixed;
+    margin: 0px,0px,110px,0px;
+    height: 4500px;
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+}
+
+#story-freext>div:nth-of-type(1) {
+    background: url(../img/3.png) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    width:100%;
+    top:0;left:0;
+}
+
+#story-freext>div:nth-of-type(2) {
+    background: url(../img/Fire.png) 50% 0 no-repeat fixed;
+    margin: 10%;
+    height: 2000px;
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+}
+
+section h1{color:orange;
+  text-align: right;
+  width:300px;
+  font-size:65px;
+  margin-bottom:14px;
+}
+section h2 {
+  color:orange;
+  font-size: 65px;
+  text-align: center
+  float: center-block;
+  z-index:6;
+  position: relative;
+
+}
+section p{color:black;width:300px;}
+section article{
+  position:absolute;
+  top:240px;
+  left:40px;
+  width:300px;
+  z-index:4;}
+
+.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
