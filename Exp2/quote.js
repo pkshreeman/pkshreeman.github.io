@@ -1,5 +1,5 @@
 
-/*(Greetings!  This is a customized quote generator based on the quotes I borrowed from the website: http://buddhaimonia.com/101-zen-sayings-and-proverbs as part of the freecodecamp project.*/
+/*(Greetings!  This is a customized quote generator based on the quotes that was borrowed from the website: http://buddhaimonia.com/101-zen-sayings-and-proverbs as part of the freecodecamp project.*/
 
 var qii = 0;
 var thequote;
