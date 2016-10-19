@@ -3,3 +3,17 @@ body {
   margin: 0;
   padding: 0;
 }
+h1 {
+  text-align: center;
+}
+.stillness{
+  z-index: 10;
+  position: fixed;
+  margin: 25px 25px 0px 25px;
+  padding: 0;
+  color: white;
+}
+
+.icon{
+  max-width: 30px;
+}
