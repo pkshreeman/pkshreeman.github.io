@@ -3,32 +3,45 @@
 <title> Dr. Paul K. Shreeman's Profile </title>
 <body>
 <head>
-  <link href="First.css" rel=stylesheet type="text/css">
+  <title>Dr. Paul Kenneth Shreeman's Profile </title>
+  <script src="jquery-3.1.1.slim.min.js"></script>
+  <link href="First.css" rel="stylesheet" type="text/css">
   <link href="w3.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+  <script src="myjs.js"></script>
+  <script src="quote.js"></script>
+  <script src="respond.min.js"></script>
+
+  <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
 </head>
 <!-- Section of Navigation Panel -->
-  <div id = navg; class = stillness>
-<img src="icons/SmileCircle.png">
-<br>
-<a href="http://www.freecodecamp.com/pkshreeman">
-  <img class = "icon"; src="icons/fcc.png">
-</a>
-<a href="http://codepen.io/pkshreeman">
-  <img class ="icon"; src="icons/codepen.png">
-</a>
-<a href ="http://linkedin.com/in/pkshreeman">
-  <img class="icon"; src="icons/lin.png">
-</a>
-<a href="https://github.com/pkshreeman">
-  <img class="icon"; src="icons/github.png">
-</a>
-<a href="https://medium.com/@pkshreeman">
-  <img class = "icon"; style = "background-color:white", src="icons/medium.png">
-</a>
-
-  </div>
+  <div id = "navg" class = "stillness">
+<!--img src="icons/SmileCircle.png"-->
+  <a href="#firstvideo"><div class="nagdiv"> Greeting Video </div></a>
+  <a href="#seconddiv"><div class="nagdiv"> Research Publications</div></a>
+  <a href="#thirddiv"><div class="nagdiv"> Final Cut Pro X <br> Showcases </div></a>
+  <a href="#fourthdiv"><div class="nagdiv"> Front End Development<br> Showcases </div></a>
+  <div><!--Grouping the clickable links to my other profiles -->
+  <a href="http://www.freecodecamp.com/pkshreeman">
+    <img class = "icon" src="icons/fcc.png">
+  </a>
+  <a href="http://codepen.io/pkshreeman">
+    <img class ="icon" src="icons/codepen.png">
+  </a>
+  <a href ="http://linkedin.com/in/pkshreeman">
+    <img class="icon" src="icons/lin.png">
+  </a>
+  <a href="https://github.com/pkshreeman">
+    <img class="icon" src="icons/github.png">
+  </a>
+  <a href="https://medium.com/@pkshreeman">
+    <img class = "icon" style = "background-color:white" src="icons/medium.png" >
+  </a>
+</div><!--End of clickable grouping-->
+  </div> <!--End of the navigation div-->
   <div id="firstvideo">
-  <video width = 100% autoplay>
+  <video width =" 100%" autoplay>
     <source src="Salutation.mp4">
       <!-- Add vanishing effect after the video? -->
     </video>
@@ -42,7 +55,7 @@
   <div class="w3-third">
     <div class="w3-card-4">
   <a href="https://drive.google.com/file/d/0B69-mwt8z-vzN3g2TTZZXzJMMW8/view?usp=sharing" >
-  <img src="ImagesPublications/2013.png"  alt="2013.png">
+  <img class ="zoomer" src="ImagesPublications/2013.png"  alt="2013.png">
 </a>
 </div>
   </div>
@@ -66,12 +79,14 @@
   </div>
 <div id="thirddiv">
 <h1> Final Cut Pro X Showcases </h1>
+<hr>
 <div class = "w3-row-padding">
   <div class = "w3-half">
 <a href="https://www.youtube.com/watch?v=Qn4jhTtTmBM&list=FLDG7Hh6u6CXzFKqeeGXlAOA">
   <img src="icons/Glide.jpg">
 </a>
 </div>
+
 <div class="w3-half">
 <p>
   Interviewed with Glide Representative (Sarah Glide), merged three simltaneous videos into a single stream with changing views.
@@ -79,6 +94,7 @@
 </p>
 </div>
 </div>
+<hr>
 <div class="w3-row-padding">
 <div class = "w3-half">
   <a href="https://www.youtube.com/watch?v=kGWbPuno0IQ">
@@ -93,117 +109,65 @@
 </div>
 </div>
 </div>
+<div id="fourthdiv">
+  <h1> Front End Development Showcases </h1>
+    <hr>
+  <div class ="w3-row-padding">
+    <div class = "w3-half">
+      <p data-height="350" data-theme-id="dark" data-slug-hash="xErQLj" data-default-tab="js,result" data-user="pkshreeman" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pkshreeman/pen/xErQLj/">Simon Game v2</a> by Dr. Paul Kenneth Shreeman (<a href="http://codepen.io/pkshreeman">@pkshreeman</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+  </div>
+<div class ="w3-half">
+  <p> Simon Game, the final project of Free Code Camp Front End Development was coded from scratch without use of additional external CSS or HTML libraries.  Javascript and JQuery was used extensively to develop this project.
+
+  Objective was to quickly complete the project with most simple algorithms as possible.</p>
+  <p>
+  <span>Javascript</span>
+  <span>JQuery</span>
+  <span>HTML5</span>
+  <span>CSS3</span>
+</p>
+</div>
+</div>
+<hr>
+
+<div class = "w3-row-padding">
+<div class = "w3-half quotebody">
+
+  <p id = "quotemachine">
+  <div>
+     "As a bee gathering nectar does not harm or disturb the color & fragrance of the flower; so do the wise move through the world."   Buddha
+   </div>
+   </p>
+   <div class = "w3-row-padding">
+     <div class = "w3-half" id="block1">
+    <a class="button" target="_blank" href='https://twitter.com/intent/tweet?text= "As a bee gathering nectar does not harm or disturb the color and fragrance of the flower, so do the wise move through the world. – Buddha"'>
+
+       <button>Tweet the quote! </button></a>
+</div>
+
+
+<div class ="w3-half">
+ <button id = "quotebutton">Random Quotes</button>
+
+</div>
+</div>
+
+  <div class = "w3-content">
+       <a  href = "http://buddhaimonia.com/101-zen-sayings-and-proverbs/">Click here for the source of these quotes</a>
+</div>
+</div>
+
+
+<div class = "w3-half">
+  <p>
+  One of the earlier projects on Free Code Camp, this project remains one of my favorites where I struggled with how to string together various non-constant variables for tweeting purposes, and how to create that tweet button.
+  This is modification of the earlier project, and I am happy to report that I have increased my JQuery mastery!</p>
+  <span>Javascript</span>
+  <span>JQuery</span>
+  <span>HTML5</span>
+  <span>CSS3</span>
+  </div>
+</div>
+  </div><!--End of fourth div-->
 </body>
-</html>
-
-
-<!--
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Introduction to the ASL Beyond">
-<meta name="keywords" content="Innovative Dr. Paul K. Shreeman">
-<meta name="author" content="Dr. Paul K. Shreeman">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Greetings!</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="portfolioResponsive.css" rel="stylesheet" type="text/css">
-<link href="portfolioStyle.css" rel="stylesheet" type="text/css">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-
-<script src="respond.min.js"></script>
-</head>
-
-<body>
-<div class="gridContainer clearfix">
-  <div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/UyMzNHK-adE?autoplay=1&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-
-  <article class="fluid textContainer" id="secondaryStyling">
-    <section class="fluid secondarySection zeroMargin_desktop zeroMargin_tablet">
-<div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/7aNKl12b4-E?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-<h2 class="fluid secondaryHeading headingStyle"><a href="https://aslbeyondblog.wordpress.com/"> ASL Beyond!</a> </h2>
-      <p class="contentArea">Enter the truly revoluntray world of ASL! &nbsp;Never has one ever experienced the full visualization of the powerful language! &nbsp;Performance, Courses, Training, Educational Outreach all are available.</p>
-    </section>
-
-    <section class="fluid secondarySection hide_mobile">
-<div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/NrmB8wEReZg?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-      <h2 class="fluid secondaryHeading headingStyle">ASL Brew!</h2>
-      <p class="contentArea">A workshop based located in Austin, TX designed to break free the unnatural restrains of English synatx and habitual stuctures being used in typical sign language situations. &nbsp;Deisgned for people who are willing to enter a new world of experience.</p>
-    </section>
-  </article>
-
-  <article class="fluid textContainer" id="secondaryStyling">
-    <section class="fluid secondarySection zeroMargin_desktop zeroMargin_tablet">
-     <div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/VqEnyTSFlW0?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-      <h2 class="fluid secondaryHeading headingStyle">Video Editor!</h2>
-      <p class="contentArea">Expert in Video Editing, Recording, and all related Effects!</p>
-
-</section>
-
-  <section class="fluid secondarySection">
-     <div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/Tgprqa9krRc?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-      <h2 class="fluid secondaryHeading headingStyle"><a href="https://drpkshreeman.wordpress.com/" >Performances!</a></h2>
-      <p class="contentArea">Performance in many capabilities: &nbsp;Physical performance, Storytelling, Educational, Presentation, and so on....</p>
-    </section>
-  </article>
-    <article class="fluid textContainer" id="secondaryStyling">
-    <section class="fluid secondarySection zeroMargin_desktop zeroMargin_tablet">
-     <div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/V-tIDHcloY0?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-      <h2 class="fluid secondaryHeading headingStyle">PhD in Nanoscale &nbsp;Science &amp; Engineering</h2>
-      <p class="contentArea">Consultant in STEM field, including but not limited to: &nbsp;Research, Education, Training, &nbsp;and Publications</p>
-</section>
-
-    <section class="fluid secondarySection hide_mobile">
-<div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/UEG0oRgC5FE?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-<font color="#ffffff" face="montserrat, sans-serif" size="6">STEM-ASL</font><br>
-<p class="contentArea">Development of ASL in STEM field...</p>
-    </section>
-  </article>
-  <article class="fluid gallery">
-   <div class="embed-responsive embed-responsive-16by9">
-       <iframe
-  		class="embed-responsive-item"
-  		src="https://www.youtube.com/embed/Ikkg7wdSmZg?autoplay=0&cc_load_policy=1&rel=0">
-       </iframe>
-  </div>
-    <h1 class="fluid showAreaH2 headingStyle"> <a href="mailto:pkshreeman@gmail.com">E-mail Dr. Paul Kenneth Shreeman!</a></h2>
-  </article>
--->
-
-
 </html>
