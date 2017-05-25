@@ -1,0 +1,126 @@
+/* Troubelshooting set: Border on all boxes */
+
+* {
+    /* Just a useful tool for outlining layouts */
+    border: 0px solid red;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.map {
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.infonav {
+    height: 300px;
+    overflow: scroll;
+}
+
+
+h1 {
+    font-weight: 100;
+    font-size: 60px;
+    color: #2d3c49;
+}
+
+
+h2 {
+    font-size: 45px;
+    color: #7d97ad;
+}
+
+
+h3 {
+    font-size: 45px;
+    color: #2d3c49
+}
+
+
+h4 {
+    font-size: 25px;
+    color: #2d3c49;
+}
+
+
+h5 {
+    font-size: 15px;
+    color: #7d97ad;
+}
+
+
+hr {
+    border: 0 none;
+    background-color: #7d97ad;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5px;
+}
+
+
+.title-logo {
+    margin: 18px 0;
+}
+
+
+.main-image {
+    margin: 20px 0;
+}
+
+
+p {
+    font-size: 20px;
+    overflow: auto;
+}
+
+
+button {
+    border-radius: 3px;
+    width: 100%;
+    margin: .2em;
+}
+
+
+button:hover {
+    background-color: blue;
+}
+
+
+article {
+  height: 200px;
+  overflow: scroll;
+  border: 5px solid #e8d9c5;
+  border-radius: 3px;
+
+}
+
+.yelpimage {
+  padding: 0;
+  margins: 0;
+  width: 100%;
+  max-width: 100px;
+}
+
+.yelp-box {
+  border: 1px solid #D32323;
+}

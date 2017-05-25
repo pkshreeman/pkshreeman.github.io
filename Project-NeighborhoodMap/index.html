@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Yes, it's in hmtl, and in English-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--responsiveness requires this configuration -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <title> Your friendly neighborhood! </title>
+</head>
+
+<body>
+  <div class="container">
+    <header class='row'>
+      <div class="col-md-8" .>
+        <h1> Neighborhood Analyzer</h1>
+        <div data-bind="text: errorMarker"></div>
+      </div>
+      <div class="col-md-4">
+        Select type of locations you want to search within your area.<br>
+        <select id="select" name="select" data-bind="options: places, value: selectedPlace, optionsCaption: 'Select'">
+        </select>
+        <!--div data-bind="text: selectedPlace"></div-->
+      </div>
+    </header>
+    <section class="row navlist">
+      <nav class="col-md-3 infonav">
+        <input placeholder="Filter" type="search" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off">
+        <div data-bind="foreach: placesGoogle">
+          <div data-bind="visible: viewQ">
+        <button class=" btn btn-default" data-bind="click: markmarker">
+              <h5 data-bind="text: name">  This is a navigational column </h5>
+              <span data-bind="text: vicinity"></span>
+            </button></div></div>
+      </nav>
+      <div class="col-md-7 map" id="map" data-bind="text: errorGoogleMap">
+        Awaiting for the google map to appear
+      </div>
+      <div class="col-md-2 yelp infonav">
+        <a href="https://www.yelp.com"><img class="img-fluid yelpimage" src= "Yelp_trademark_RGB.png">
+        </a>
+        <hr>
+        <span data-bind="text: yelperror"></span>
+        <hr>
+        <div data-bind="foreach: yelpdata">
+          <a  href="" data-bind=" attr:{href: url}">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="" class="yelpimage" data-bind=" attr:{src: image_url}" />
+              </div>
+              <div class="col-md-6" <h5 data-bind="text: name">
+                </h5>
+              </div>
+
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div class="row">
+      <div class="col-md-1">
+        Welcome!
+      </div>
+      <div class="col-md-3">
+        Your current location: <br>
+        <div data-bind="text: errorRGeo"></div>
+
+        <span data-bind="text: address"> Loading ...</span>
+      </div>
+      <div class="col-md-4">
+        <span data-bind="html: temp"> Loading ...</span>
+      </div>
+      <div class="col-md-4">
+        <span data-bind="text: weatherdes"></span>
+        <img src="" data-bind=" attr:{src: iconID}" />
+        <pre data-bind="text: errorWeather"></pre>
+      </div>
+    </div>
+    <hr>
+    <section class="row articles">
+      <article class="col-md-6 nytimes-container rounded">
+        <h4 id="nytimes-header">New York Times Articles</h4>
+        <h5 data-bind="text: errorNYTimes"></h5>
+        <div data-bind="foreach: articlesNYT">
+          <a href="" data-bind="attr:{href: web_url}">
+            <h5 data-bind="text: headline.main"> What's going on in your city?</h5>
+          </a>
+          <span data-bind="text: lead_paragraph"></span>
+          </ul>
+        </div>
+      </article>
+      <article class="col-md-6 wikiArray rounded">
+        <h4 id="wiki"> Wiki References </h4>
+        <h5 data-bind="text: errorWiki"></h5>
+        <div data-bind="foreach: wikiArray">
+          <h5 data-bind="text: title"></h5>
+          <a href="" data-bind="attr:{href: link}"><span data-bind="text: desc">
+              </span></a>
+        </div>
+      </article>
+    </section>
+  </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/knockout-3.4.2.js"></script>
+  <script src="js/partone.js"></script>
+  <script async defer onerror="ViewModel1.notifyGoogleMapError()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9AjHKQO7uPcP3qj0b__1NI0xMXXgPBrc&v=3&libraries=places,geometry,drawing"></script>
+</body>
+
+</html>
