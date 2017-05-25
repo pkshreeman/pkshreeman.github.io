@@ -447,5 +447,5 @@ function markmarker(place) {
 }
 
 //var markers = [];
-controller.init();
+//controller.init();
 ko.applyBindings(ViewModel1);
