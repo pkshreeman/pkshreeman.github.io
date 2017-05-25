@@ -37,8 +37,11 @@ var model = {
       console.warn(`ERROR(${err.code}): ${err.message}`);
       console.warn('Default Coordinates are used.');
     }
-
-    navigator.geolocation.getCurrentPosition(success, error, options);
+    if ("geolocation" in navigator){
+    navigator.geolocation.getCurrentPosition(success, error, options)}
+    else {
+      processor();
+      console.error('Fail procedure triggered for geolocation. Defaults used.');}
   },
 
 
