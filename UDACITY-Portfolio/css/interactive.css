@@ -1,0 +1,51 @@
+* {
+    /* Just a useful tool for outlining layouts */
+    border: 0 solid red;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 60px;
+    color: #2d3c49;
+}
+
+h2 {
+    font-size: 45px;
+    color: #7d97ad;
+}
+
+h3 {
+    font-size: 45px;
+    color: #2d3c49
+}
+
+h4 {
+    font-size: 25px;
+    color: #2d3c49;
+}
+
+hr {
+    border: 0 none;
+    background-color: #7d97ad;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5px;
+}
+
+.title-logo {
+    margin: 18px 0;
+}
+
+.main-image {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 20px;
+    overflow: auto;
+}
