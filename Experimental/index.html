@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Yes, it's in hmtl, and in English-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--responsiveness requires this configuration -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/firststyle.css">
+    <title> Personal Website of Dr. Paul K. Shreeman </title>
+</head>
+<body>
+  <div data-bind="foreach: pub">
+    <span data-bind="text: pub.image"></span>
+  </div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/knockout-3.4.2.js"></script>
+<script src="js/firstscript.js"></script>
+</html>

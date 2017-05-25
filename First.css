@@ -1,0 +1,95 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+}
+h1 {
+  text-align: center;
+}
+.stillness{
+  z-index: 10;
+  position: fixed;
+  margin: 25px 25px 0px 25px;
+  padding: 0;
+  color: white;
+  }
+
+.icon{
+  max-width: 30px;
+}
+.onethird{
+  width: 25%;
+  padding: 0;
+}
+img{
+width:100%;
+overflow: hidden;
+}
+
+img:hover{
+  transform:scale(1.05);
+}
+
+.nagdiv{
+  background-color: #7BB7DF;
+  padding: 5px;
+  opacity: .65;
+  margins:0px;
+  border-top: solid;
+  text-align: center;
+  }
+
+hr{
+  margins: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+}
+
+p{
+  postion: absoulte;
+    left:0;
+    top: 50%;
+    width: 100%;
+  text-align: center;
+
+  font-family: "Kaushan+Script";
+  font-size: 1.3em;
+  margins: 100px;
+
+
+  top:50%;
+}
+span{
+  text-align: center;
+  margins:30px;
+  border-style: double;
+  border-color: darkgrey;
+  background-color: whitesmoke;
+  padding: 5px 20px 5px 20px;
+
+}
+.quotebody {
+  background-color: black;
+  background-image: url('ImageLibrary/parchment.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+}
+
+.borline {
+  color: white;
+  font-family: "Kaushan Scipt", cursive;
+  font-size: 25px;
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 40px;
+  margin: 0 20% 0 20%;
+  padding: 5px;
+  text-align: center;
+  background-color: gray;
+  opacity: 0.85;
+}
