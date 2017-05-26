@@ -3,31 +3,29 @@ var ViewModel = {
   quote: ko.observable(),
   quotes: ko.observable({
     "success": {
-        "total": 1
+      "total": 1
     },
     "contents": {
-        "quotes": [
-            {
-                "quote": "Plant your own garden and decorate your own soul, instead of waiting for someone to bring you flowers.",
-                "length": "102",
-                "author": "Veronica A. Shoffstall",
-                "tags": [
-                    "flowers",
-                    "inspire",
-                    "self-help",
-                    "soul"
-                ],
-                "category": "inspire",
-                "date": "2017-05-25",
-                "permalink": "https://theysaidso.com/quote/LQbKQGxVA2rcH4lIwn6OIweF/veronica-a-shoffstall-plant-your-own-garden-and-decorate-your-own-soul-instead-o",
-                "title": "Inspiring Quote of the day",
-                "background": "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg",
-                "id": "LQbKQGxVA2rcH4lIwn6OIweF"
-            }
+      "quotes": [{
+        "quote": "Plant your own garden and decorate your own soul, instead of waiting for someone to bring you flowers.",
+        "length": "102",
+        "author": "Veronica A. Shoffstall",
+        "tags": [
+          "flowers",
+          "inspire",
+          "self-help",
+          "soul"
         ],
-        "copyright": "2017-19 theysaidso.com"
+        "category": "inspire",
+        "date": "2017-05-25",
+        "permalink": "https://theysaidso.com/quote/LQbKQGxVA2rcH4lIwn6OIweF/veronica-a-shoffstall-plant-your-own-garden-and-decorate-your-own-soul-instead-o",
+        "title": "Inspiring Quote of the day",
+        "background": "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg",
+        "id": "LQbKQGxVA2rcH4lIwn6OIweF"
+      }],
+      "copyright": "2017-19 theysaidso.com"
     }
-}),
+  }),
 
   pub: ko.observable(
     [{
@@ -69,14 +67,30 @@ var ViewModel = {
   )
 };
 
-function endofvideo(){
-  console.log("end of video triggered")
-  $('.salute').hide('slow');}
-
-function getquote(){
-  var getURL = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback";
-  $.getJSON(getURL, function(response) {
-    ViewModel.quote(response);
-});
+function endofvideo() {
+  console.log("end of video triggered");
+  $('.salute').hide('slow');
 }
+
+
+function mycallback(data) {
+  console.log("mycallback is triggered.");
+  console.log(data);
+  ViewModel.quote(data);
+}
+
+function getquote() {
+  var url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback";
+  $.ajax({
+    url: url,
+    type: 'GET',
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    },
+    crossDomain: true,
+    dataType: 'jsonp',
+  });
+}
+
+
 ko.applyBindings(ViewModel);
