@@ -3,22 +3,67 @@
 <!--Yes, it's in hmtl, and in English-->
 
 <head>
-    <meta charset="utf-8">
-    <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--responsiveness requires this configuration -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/firststyle.css">
-    <title> Personal Website of Dr. Paul K. Shreeman </title>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="smrZNxol90QXv5ioauiWt7yt7NQg5BvCiTvLKFBeAzM" />
+  <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--responsiveness requires this configuration -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/firststyle.css">
+  <title> Personal Website of Dr. Paul K. Shreeman </title>
 </head>
+
 <body>
-  <div data-bind="foreach: pub">
-    <span data-bind="text: pub.image"></span>
-  </div>
+  <div class="image-quote" data-bind="foreach: quote">
+        <p data-bind="html: content"></p>
+        <span class="author" data-bind="text: title"></span>
+    <!--img  src="" data-bind="attr:{src: background}"-->
+    </div>
+    <!--span class="credit" style="z-index:50;font-size:0.9em;"><img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/><a href="https://theysaidso.com" title="Powered by quotes from theysaidso.com" >theysaidso.com</a></span-->
+
+
+  <video class="salute" width="100%" autoplay onended="endofvideo()">
+    <source src="img/Salutation.mp4" >
+  </video>
+<div>
+<h2> Peer Reviewed Publications </h2>
+</div>
+  <section class="pubrow" >
+      <div data-bind="foreach: pub">
+        <a href="" data-bind="attr:{href: link}">
+          <img src="" data-bind="attr:{src: image}">
+        </a>
+    </div>
+  </section>
+
+<footer>
+  <a href="http://www.freecodecamp.com/pkshreeman">
+      <img class="icon" src="img/fcc70x70.png">
+  </a>
+  <a href="http://codepen.io/pkshreeman">
+      <img class="icon" src="img/codepen70x70.png">
+  </a>
+  <a href="http://linkedin.com/in/pkshreeman">
+      <img class="icon" src="img/linkedIn70x70.png">
+  </a>
+  <a href="https://github.com/pkshreeman">
+      <img class="icon" src="img/github70x70.png">
+  </a>
+  <a href="https://medium.com/@pkshreeman">
+      <img class="icon" style="background-color:white" src="img/medium70x70.png">
+  </a>
+
+  <button class="btn btn-info" onclick="getquote()"> Get More Quotes!
+  </button>
+
+</footer>
 </body>
+
+
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/knockout-3.4.2.js"></script>
 <script src="js/firstscript.js"></script>
+
 </html>

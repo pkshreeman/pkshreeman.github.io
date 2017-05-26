@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+* {
+  border: 0px solid red; }
+
+body {
+  background-color: black;
+  margin: 1px; }
+
+h2 {
+  text-align: center;
+  position: static;
+  background-color: white; }
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  width: 100%; }
+  footer .icon {
+    max-width: 25px;
+    border: 1px solid red; }
+  footer button {
+    float: right;
+    margin: 10px 20px;
+    padding: 1px 1px; }
+
+.image-quote {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: -5; }
+  .image-quote img {
+    position: inherit;
+    width: 100%; }
+  .image-quote p {
+    position: inherit;
+    font-family: Lobster;
+    font-size: 4em;
+    margin: 1em;
+    z-index: 5; }
+  .image-quote span {
+    font-size: 2em;
+    position: inherit;
+    z-index: 5;
+    bottom: 5em;
+    right: 5em;
+    color: white; }
+  .image-quote a {
+    z-index: 5; }
+
+.credit {
+  z-index: 5;
+  position: fixed;
+  bottom: 5em;
+  right: 2em;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px; }
+  .credit a {
+    color: white; }
+
+.pubrow {
+  height: 400em;
+  white-space: nowrap;
+  overflow-x: auto; }
+  .pubrow img {
+    border: 2px solid #FFF8DC;
+    opacity: 0.7; }
+    .pubrow img:hover {
+      opacity: 1; }
+
+video {
+  z-index: 2; }
+
+/*# sourceMappingURL=firststyle.css.map */
