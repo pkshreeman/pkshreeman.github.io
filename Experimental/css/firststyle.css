@@ -1,15 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 * {
-  border: 1px solid red; }
+  border: 2px solid red; }
 
 body {
-  background-color: black;
-  margin: 1px; }
+  background-color: black; }
 
 h2 {
   text-align: center;
-  position: static;
-  background-color: white; }
+  color: white; }
 
 footer {
   position: fixed;
@@ -24,41 +22,27 @@ footer {
     margin: 10px 20px;
     padding: 1px 1px; }
 
-.image-quote {
-  position: fixed;
-  width: 100%;
-  z-index: -5; }
-  .image-quote p {
-    position: inherit;
+.quote {
+  text-align: center; }
+  .quote p {
     font-family: Lobster;
-    font-size: 2em;
-    margin: 1em;
-    z-index: 5; }
-  .image-quote span {
-    font-size: 2em;
-    position: inherit;
-    z-index: 5;
+    font-size: 1.2em;
     color: white; }
-  .image-quote a {
-    z-index: 5; }
-
-.credit {
-  z-index: 5;
-  position: fixed;
-  bottom: 5em;
-  right: 2em;
-  color: white;
-  font-weight: lighter;
-  font-size: 20px; }
-  .credit a {
-    color: white; }
+  .quote span {
+    font-size: 1.25em;
+    color: white;
+    float: right;
+    padding-right: 2em; }
 
 .pubrow {
-  height: 400em;
+  height: 250px;
   white-space: nowrap;
-  overflow-x: auto; }
+  overflow-x: auto;
+  border: 1px solid red; }
   .pubrow img {
     border: 2px solid #FFF8DC;
+    height: 250px;
+    width: auto;
     opacity: 0.7; }
     .pubrow img:hover {
       opacity: 1; }

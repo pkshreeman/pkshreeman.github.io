@@ -8,59 +8,122 @@
   <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--responsiveness requires this configuration -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+  <!--link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet"-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="css/firststyle.css">
   <title> Personal Website of Dr. Paul K. Shreeman </title>
+
+
 </head>
 
 <body>
-  <div class="image-quote" data-bind="foreach: quote">
-        <p data-bind="html: content"></p>
-        <span class="author" data-bind="text: title"></span>
-    </div>
+  <div class="container-fluid">
+    <section class="row">
+
+      <div class="col-md-1"></div>
+
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+        <div class="quote panel-body col-md-10" data-bind="foreach: quote">
+          <h2> Quotes from <a href="https://quotesondesign.com"> quotesondesign </a></h2>
+          <p data-bind="html: content"></p>
+          <span class="author" data-bind="text: title"></span>
+          <br>
+          <button class="btn btn-info btn-xs" onclick="getquote()"> Get More Quotes!
+        </button>
+
+          <a class="btn btn-xs" href="" data-bind="attr: {href: $parent.tweetquote}">
+        Tweet this!
+        </a>
+        </div>
+
+      </div>
+
+      <div class="col-m-1"></div>
+    </section>
+  </div>
+
 
   <video class="salute" width="100%" autoplay onended="endofvideo()">
     <source src="img/Salutation.mp4" >
   </video>
-<div>
-<h2> Peer Reviewed Publications </h2>
-</div>
-  <section class="pubrow" >
+
+
+  <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+    <h2 class=""> Peer Reviewed Publications </h2>
+
+    <section class="pubrow">
       <div data-bind="foreach: pub">
         <a href="" data-bind="attr:{href: link}">
           <img src="" data-bind="attr:{src: image}">
         </a>
+      </div>
+    </section>
+  </div>
+
+  <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+
+      <h2> Final Cut Pro X Showcases </h2>
+    <hr>
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://www.youtube.com/watch?v=Qn4jhTtTmBM&list=FLDG7Hh6u6CXzFKqeeGXlAOA">
+              <img src="img/Glide400x223.jpg">
+          </a>
+        </div>
+        <div class="col-md-4">
+            Interviewed with Glide Representative (Sarah Glide), merged three simltaneous videos into a single stream with changing views.
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.youtube.com/watch?v=kGWbPuno0IQ">
+            <img src="img/BPC400x223.png">
+        </a>
+        </div>
+
+        <div class="col-md-4">
+            Performed at Bedpost Confessions (BPC), produced and merged two simltaneous videos, audio recordings and captioning (with Awti Productions)
+        </div>
+
+      </div>
     </div>
-  </section>
+  </div>
 
-<footer>
-  <a href="http://www.freecodecamp.com/pkshreeman">
-      <img class="icon" src="img/fcc70x70.png">
-  </a>
-  <a href="http://codepen.io/pkshreeman">
-      <img class="icon" src="img/codepen70x70.png">
-  </a>
-  <a href="http://linkedin.com/in/pkshreeman">
-      <img class="icon" src="img/linkedIn70x70.png">
-  </a>
-  <a href="https://github.com/pkshreeman">
-      <img class="icon" src="img/github70x70.png">
-  </a>
-  <a href="https://medium.com/@pkshreeman">
-      <img class="icon" style="background-color:white" src="img/medium70x70.png">
-  </a>
 
-  <button class="btn btn-info" onclick="getquote()"> Get More Quotes!
-  </button>
+  <footer>
+    <a href="http://www.freecodecamp.com/pkshreeman">
+      <img class="icon" src="img/fcc70x70.png" alt="fcc icon">
+  </a>
+    <a href="http://codepen.io/pkshreeman">
+      <img class="icon" src="img/codepen70x70.png" alt="codepen icon">
+  </a>
+    <a href="http://linkedin.com/in/pkshreeman">
+      <img class="icon" src="img/linkedIn70x70.png" alt="linkedin icon">
+  </a>
+    <a href="https://github.com/pkshreeman">
+      <img class="icon" src="img/github70x70.png" alt="github icon">
+  </a>
+    <a href="https://medium.com/@pkshreeman">
+      <img class="icon" style="background-color:white" src="img/medium70x70.png" alt="medium icon">
+  </a>
+    <a class="btn btn-default" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  Quotes </a>
+    <a class="btn btn-default" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+Peer-Reviewed Publications </a>
+    <a class="btn btn-default" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+Projects </a>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">
 
-</footer>
+  </footer>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/knockout-3.4.2.js"></script>
+  <script src="js/firstscript.js"></script>
+
 </body>
-
-
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/knockout-3.4.2.js"></script>
-<script src="js/firstscript.js"></script>
 
 </html>

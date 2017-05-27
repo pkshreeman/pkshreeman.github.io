@@ -1,32 +1,7 @@
 /*jshint esversion: 6 */
 var ViewModel = {
+  tweetquote: ko.observable(),
   quote: ko.observable(),
-  quotes: ko.observable({
-    "success": {
-      "total": 1
-    },
-    "contents": {
-      "quotes": [{
-        "quote": "Plant your own garden and decorate your own soul, instead of waiting for someone to bring you flowers.",
-        "length": "102",
-        "author": "Veronica A. Shoffstall",
-        "tags": [
-          "flowers",
-          "inspire",
-          "self-help",
-          "soul"
-        ],
-        "category": "inspire",
-        "date": "2017-05-25",
-        "permalink": "https://theysaidso.com/quote/LQbKQGxVA2rcH4lIwn6OIweF/veronica-a-shoffstall-plant-your-own-garden-and-decorate-your-own-soul-instead-o",
-        "title": "Inspiring Quote of the day",
-        "background": "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg",
-        "id": "LQbKQGxVA2rcH4lIwn6OIweF"
-      }],
-      "copyright": "2017-19 theysaidso.com"
-    }
-  }),
-
   pub: ko.observable(
     [{
         "image": "img/Dissertation1-300px.png",
@@ -70,6 +45,7 @@ var ViewModel = {
 function endofvideo() {
   console.log("end of video triggered");
   $('.salute').hide('slow');
+  getquote();
 }
 
 
@@ -77,6 +53,8 @@ function mycallback(data) {
   console.log("mycallback is triggered.");
   console.log(data);
   ViewModel.quote(data);
+  var tweetthis = "https://twitter.com/intent/tweet?text="+ jQuery(ViewModel.quote()[0].content).text();
+  ViewModel.tweetquote(tweetthis);
 }
 
 function getquote() {
@@ -92,5 +70,9 @@ function getquote() {
   });
 }
 
+$('.collaspe').click(function(){
+  $('.collaspe').collapse();
+  console.log("The click function of pubrow is triggered");
+});
 
 ko.applyBindings(ViewModel);
