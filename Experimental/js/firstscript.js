@@ -50,7 +50,7 @@ function endofvideo() {
 
 
 function mycallback(data) {
-  console.log("mycallback is triggered.");
+  console.log("mycallback for twitter is triggered.");
   console.log(data);
   ViewModel.quote(data);
   var tweetthis = "https://twitter.com/intent/tweet?text="+ jQuery(ViewModel.quote()[0].content).text();
@@ -74,5 +74,8 @@ $('.collaspe').click(function(){
   $('.collaspe').collapse();
   console.log("The click function of pubrow is triggered");
 });
-
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    (".salute").hide();
+    getquote();
+}
 ko.applyBindings(ViewModel);

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 * {
-  border: 2px solid red; }
+  border: 0px solid red; }
 
 body {
   background-color: black; }
@@ -49,5 +49,11 @@ footer {
 
 video {
   z-index: 2; }
+
+.bottomspacer {
+  min-height: 5em; }
+
+.FCPX img {
+  width: 100%; }
 
 /*# sourceMappingURL=firststyle.css.map */
