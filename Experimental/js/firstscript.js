@@ -75,7 +75,7 @@ $('.collaspe').click(function(){
   console.log("The click function of pubrow is triggered");
 });
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    (".salute").hide();
+    $('.salute').hide();
     getquote();
 }
 ko.applyBindings(ViewModel);
