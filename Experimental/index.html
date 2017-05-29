@@ -19,20 +19,20 @@
   <div class="container-fluid">
     <section class="row">
 
-      <div class="col-md-1"></div>
+      <div class="col-sm-1"></div>
       <!--http://getbootstrap.com/javascript/#collapse-->
       <!--My first attempt of creating collapsing elements-->
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 
-        <div class="quote panel-body col-md-10" data-bind="foreach: quote">
+        <div class="quote panel-body col-sm-10 clearfix" data-bind="foreach: quote">
           <h2> Quotes from <a href="https://quotesondesign.com"> quotesondesign </a></h2>
           <p data-bind="html: content"></p>
           <span class="author" data-bind="text: title"></span>
           <br>
-          <button class="btn btn-default btn-xs" onclick="getquote()"> More Quotes!
+          <button class="btn btn-default btn-sm" onclick="getquote()"> More Quotes!
         </button>
 
-          <a class="btn btn-info btn-xs" href="" data-bind="attr: {href: $parent.tweetquote}">
+          <a class="btn btn-info btn-sm" href="" data-bind="attr: {href: $parent.tweetquote}">
         Tweet this!
         </a>
         </div>
@@ -67,23 +67,23 @@
     <hr>
     <div class="container-fluid">
       <div class="row">
-        <div class=" FCPX col-md-3">
+        <div class=" FCPX col-sm-3">
           <a href="https://www.youtube.com/watch?v=Qn4jhTtTmBM&list=FLDG7Hh6u6CXzFKqeeGXlAOA">
               <img src="img/Glide400x223.jpg">
           </a>
         </div>
-        <div class="col-md-3">
-          Interviewed with Glide Representative (Sarah Glide), merged three simltaneous videos into a single stream with changing views.
+        <div class="col-sm-3">
+          <p>Interviewed with Glide Representative (Sarah Glide), merged three simltaneous videos into a single stream with changing views.</p>
         </div>
 
-        <div class="FCPX col-md-3">
+        <div class="FCPX col-sm-3">
           <a href="https://www.youtube.com/watch?v=kGWbPuno0IQ">
             <img src="img/BPC400x223.png">
         </a>
         </div>
 
-        <div class="col-md-3">
-          Performed at Bedpost Confessions (BPC), produced and merged two simltaneous videos, audio recordings and captioning (with Awti Productions)
+        <div class="col-sm-3">
+          <p>Performed at Bedpost Confessions (BPC), produced and merged two simltaneous videos, audio recordings and captioning (with Awti Productions)</p>
         </div>
 
       </div>
@@ -102,44 +102,50 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner clearfix" role="listbox">
 
-      <div class="item active container">
+      <div class="item active container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <img src="img/Neighborhood400x251.png" alt="Neighborhood Analyzer">
+            <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <img class="img-responsive" src="img/Neighborhood400x250.png" alt="Neighborhood Analyzer">
           </div>
-          <div class="col-md-6">
-            <h3> Neighorhood Analyzer </h3>
+          <div class="col-sm-5 fixedheight">
+            <h2> Neighorhood Analyzer </h2>
             <p> Implemented multiple API for smooth UI experience: Google Maps, Google Places, NY Times, MediaWIki, OpenWeatherMap. Added geolocation feature which then is applied to obtain random 10 results from Google Places. Installed an instance of a
               server to obtain Yelp Fusion's API results for 10 Point of Interests near the clicked marker. <br> Technologies used:JavaScript ,HTML,CSS, Knockout, AJAX, JavaScript frameworks </p>
           </div>
+            <div class="col-sm-1"></div>
         </div>
       </div>
 
-        <div class="item container">
+        <div class="item container-fluid">
           <div class="row">
-            <div class="col-md-6">
-              <img src="img/Portfolio400x214.png" alt="Portfolio Webpage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+              <img class="img-responsive" src="img/Portfolio400x250.png" alt="Portfolio Webpage">
             </div>
-            <div class="col-md-6">
-              <h3> Portfolio Webite</h3>
+            <div class="col-sm-5 fixedheight">
+              <h2> Portfolio Webite</h2>
               <p> Responsive Web Design. One of the first projects of Udacity's Full Stack Web Development Nanodegree </p>
             </div>
+              <div class="col-sm-1"></div>
           </div>
         </div>
 
-        <div class="item container">
+        <div class="item container-fluid">
           <div class="row">
-            <div class="col-md-6">
-              <img src="img/CatalogItem400x153.png" alt="Item Catalog">
+              <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+              <img class="img-responsive" src="img/CatalogItem400x250.png" alt="Item Catalog">
             </div>
 
-            <div class="col-md-6">
-              <h3> Catalog Item </h3>
+            <div class="col-sm-5 fixedheight">
+              <h2> Catalog Item </h2>
               <p>Developed a content management system using the Flask framework in Python. Installed persistent data using PostgreSQL on an instance of Ubuntu server hosted by AWS. Implemented authentication with OAuth2 protocol, and provided the additional
                 option of a salt-hashed password storage. <br> Technologies used: HTML, CSS, Python, Flask, SQL
             </div>
+              <div class="col-sm-1"></div>
           </div>
         </div>
       </div>

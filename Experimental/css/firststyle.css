@@ -61,6 +61,10 @@ video {
 
 .carousel {
   padding: 1.5em;
-  height: 275px; }
+  min-height: 275px;
+  border: 0px solid yellow; }
+
+.fixedheight {
+  min-height: 250px; }
 
 /*# sourceMappingURL=firststyle.css.map */
