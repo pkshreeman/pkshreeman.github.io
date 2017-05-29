@@ -74,6 +74,11 @@ $('.collaspe').click(function(){
   $('.collaspe').collapse();
   console.log("The click function of pubrow is triggered");
 });
+
+//https://stackoverflow.com/questions/9048253/in-javascript-if-mobile-phone
+// Code to detect the mobile to enable quote without having to play the video firstvideo
+// Also hid the video...not sure if I want to do that or not.
+
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('.salute').hide();
     getquote();

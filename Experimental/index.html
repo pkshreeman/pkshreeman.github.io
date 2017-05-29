@@ -3,17 +3,15 @@
 <!--Yes, it's in hmtl, and in English-->
 
 <head>
+  <!--unicode standard-->
   <meta charset="utf-8">
   <meta name="google-site-verification" content="smrZNxol90QXv5ioauiWt7yt7NQg5BvCiTvLKFBeAzM" />
-  <!-- Character decoding: https://tools.ietf.org/html/rfc3629-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--responsiveness requires this configuration -->
-  <!--link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet"-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="css/firststyle.css">
-  <title> Personal Website of Dr. Paul K. Shreeman </title>
 
+  <title> Personal Website of Dr. Paul K. Shreeman </title>
 
 </head>
 
@@ -22,7 +20,8 @@
     <section class="row">
 
       <div class="col-md-1"></div>
-
+      <!--http://getbootstrap.com/javascript/#collapse-->
+      <!--My first attempt of creating collapsing elements-->
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 
         <div class="quote panel-body col-md-10" data-bind="foreach: quote">
@@ -64,9 +63,9 @@
 
   <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
 
-      <h2> Final Cut Pro X Showcases </h2>
+    <h2> Final Cut Pro X Showcases </h2>
     <hr>
-<div class="container-fluid">
+    <div class="container-fluid">
       <div class="row">
         <div class=" FCPX col-md-3">
           <a href="https://www.youtube.com/watch?v=Qn4jhTtTmBM&list=FLDG7Hh6u6CXzFKqeeGXlAOA">
@@ -74,7 +73,7 @@
           </a>
         </div>
         <div class="col-md-3">
-            Interviewed with Glide Representative (Sarah Glide), merged three simltaneous videos into a single stream with changing views.
+          Interviewed with Glide Representative (Sarah Glide), merged three simltaneous videos into a single stream with changing views.
         </div>
 
         <div class="FCPX col-md-3">
@@ -84,44 +83,113 @@
         </div>
 
         <div class="col-md-3">
-            Performed at Bedpost Confessions (BPC), produced and merged two simltaneous videos, audio recordings and captioning (with Awti Productions)
+          Performed at Bedpost Confessions (BPC), produced and merged two simltaneous videos, audio recordings and captioning (with Awti Productions)
         </div>
 
       </div>
     </div>
   </div>
-<div class="bottomspacer">
-</div>
+  <!--http://getbootstrap.com/javascript/#carousel-->
+  <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
 
-  <footer>
-    <a href="http://www.freecodecamp.com/pkshreeman">
+    <h2> Project Showcases </h2>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/Neighborhood400x251.png" alt="Neighborhood Analyzer">
+          </div>
+          <div class="col-md-6">
+            <h3> Neighorhood Analyzer </h3>
+            <p> Implemented multiple API for smooth UI experience: Google Maps, Google Places, NY Times, MediaWIki, OpenWeatherMap. Added geolocation feature which then is applied to obtain random 10 results from Google Places. Installed an instance of a
+              server to obtain Yelp Fusion's API results for 10 Point of Interests near the clicked marker. <br> Technologies used:JavaScript ,HTML,CSS, Knockout, AJAX, JavaScript frameworks </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="item container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/Portfolio400x214.png" alt="Portfolio Webpage">
+            </div>
+            <div class="col-md-6">
+              <h3> Portfolio Webite</h3>
+              <p> Responsive Web Design. One of the first projects of Udacity's Full Stack Web Development Nanodegree </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/CatalogItem400x153.png" alt="Item Catalog">
+            </div>
+
+            <div class="col-md-6">
+              <h3> Catalog Item </h3>
+              <p>Developed a content management system using the Flask framework in Python. Installed persistent data using PostgreSQL on an instance of Ubuntu server hosted by AWS. Implemented authentication with OAuth2 protocol, and provided the additional
+                option of a salt-hashed password storage. <br> Technologies used: HTML, CSS, Python, Flask, SQL
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+
+    <div class="bottomspacer">
+    </div>
+
+    <footer>
+      <a href="http://www.freecodecamp.com/pkshreeman">
       <img class="icon" src="img/fcc70x70.png" alt="fcc icon">
   </a>
-    <a href="http://codepen.io/pkshreeman">
+      <a href="http://codepen.io/pkshreeman">
       <img class="icon" src="img/codepen70x70.png" alt="codepen icon">
   </a>
-    <a href="http://linkedin.com/in/pkshreeman">
+      <a href="http://linkedin.com/in/pkshreeman">
       <img class="icon" src="img/linkedIn70x70.png" alt="linkedin icon">
   </a>
-    <a href="https://github.com/pkshreeman">
+      <a href="https://github.com/pkshreeman">
       <img class="icon" src="img/github70x70.png" alt="github icon">
   </a>
-    <a href="https://medium.com/@pkshreeman">
+      <a href="https://medium.com/@pkshreeman">
       <img class="icon" style="background-color:white" src="img/medium70x70.png" alt="medium icon">
   </a>
-    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
   Quotes </a>
-    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
 Peer-Reviewed Publications </a>
-    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+      <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+FCPX </a>
+    <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
 Projects </a>
 
-  </footer>
+    </footer>
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/knockout-3.4.2.js"></script>
-  <script src="js/firstscript.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/firstscript.js"></script>
 
 </body>
 
