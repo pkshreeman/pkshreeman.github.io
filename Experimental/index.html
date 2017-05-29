@@ -25,7 +25,9 @@
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 
         <div class="quote panel-body col-sm-10 clearfix" data-bind="foreach: quote">
-          <h2> Quotes from <a href="https://quotesondesign.com"> quotesondesign </a></h2>
+          <h2>
+            Quotes from
+            <a href="https://quotesondesign.com"> quotesondesign </a></h2>
           <p data-bind="html: content"></p>
           <span class="author" data-bind="text: title"></span>
           <br>
@@ -49,7 +51,7 @@
   </video>
 
 
-  <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
     <h2 class=""> Peer Reviewed Publications </h2>
 
     <section class="pubrow">
@@ -61,7 +63,7 @@
     </section>
   </div>
 
-  <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 
     <h2> Final Cut Pro X Showcases </h2>
     <hr>
@@ -99,6 +101,7 @@
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -111,9 +114,9 @@
             <img class="img-responsive" src="img/Neighborhood400x250.png" alt="Neighborhood Analyzer">
           </div>
           <div class="col-sm-5 fixedheight">
-            <h2> Neighorhood Analyzer </h2>
+            <a href="http://pkshreeman.github.io/Project-NeighborhoodMap/" ><h4> Neighborhood Analyzer </h4></a>
             <p> Implemented multiple API for smooth UI experience: Google Maps, Google Places, NY Times, MediaWIki, OpenWeatherMap. Added geolocation feature which then is applied to obtain random 10 results from Google Places. Installed an instance of a
-              server to obtain Yelp Fusion's API results for 10 Point of Interests near the clicked marker. <br> Technologies used:JavaScript ,HTML,CSS, Knockout, AJAX, JavaScript frameworks </p>
+              server to obtain Yelp Fusion's API results for 10 Point of Interests near the clicked marker. **Technologies used:** JavaScript, HTML, CSS, Knockout, AJAX, JavaScript frameworks </p>
           </div>
             <div class="col-sm-1"></div>
         </div>
@@ -126,8 +129,8 @@
               <img class="img-responsive" src="img/Portfolio400x250.png" alt="Portfolio Webpage">
             </div>
             <div class="col-sm-5 fixedheight">
-              <h2> Portfolio Webite</h2>
-              <p> Responsive Web Design. One of the first projects of Udacity's Full Stack Web Development Nanodegree </p>
+            <a href="http://pkshreeman.github.io/UDACITY-Portfolio/">  <h4> Portfolio Webite</h4></a>
+              <p> Responsive Web Design. One of the first projects of Udacity's Full Stack Web Development Nanodegree.  Implemented modals.   **Technologies used:** Boostrap, CSS, HTML</p>
             </div>
               <div class="col-sm-1"></div>
           </div>
@@ -141,14 +144,31 @@
             </div>
 
             <div class="col-sm-5 fixedheight">
-              <h2> Catalog Item </h2>
+              <h4> Catalog Item </h4>
               <p>Developed a content management system using the Flask framework in Python. Installed persistent data using PostgreSQL on an instance of Ubuntu server hosted by AWS. Implemented authentication with OAuth2 protocol, and provided the additional
-                option of a salt-hashed password storage. <br> Technologies used: HTML, CSS, Python, Flask, SQL
+                option of a salt-hashed password storage. **Technologies used:** HTML, CSS, Python, Flask, SQL
             </div>
               <div class="col-sm-1"></div>
           </div>
         </div>
+
+        <div class="item container-fluid">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+              <img class="img-responsive" src="img/Multiblog400x250.png" alt="Multi User Blog Webpage">
+            </div>
+            <div class="col-sm-5 fixedheight">
+              <a href="https://algebraic-ward-158203.appspot.com/" ><h4> Multi-User Blog Webite</h4></a>
+              <p> Used Google App Engine and the Data Store for database to store users and blogs.  Incorporated salt hashing passwords for secure storage, and cookies for user tracking.  **Technologies used:** Python, CSS, HTML, Jinja, jQuery, Javascript, Google App Engine  </p>
+            </div>
+              <div class="col-sm-1"></div>
+          </div>
+        </div>
+
       </div>
+
+
 
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
