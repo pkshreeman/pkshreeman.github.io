@@ -2,15 +2,14 @@
 * {
   border: 0px solid red; }
 
-body {
-  background-color: black; }
-
 h2 {
   text-align: center;
-  color: white; }
+  color: black; }
 
 p {
-  color: white; }
+  color: black;
+  background-color: white;
+  opacity: 0.8; }
 
 footer {
   position: fixed;
@@ -30,12 +29,14 @@ footer {
   .quote p {
     font-family: Lobster;
     font-size: 1.2em;
-    color: white; }
+    color: black; }
   .quote span {
     font-size: 1.25em;
-    color: white;
+    color: black;
     float: right;
-    padding-right: 2em; }
+    padding-right: 2em;
+    background-color: white;
+    opacity: 0.8; }
 
 .pubrow {
   height: 255px;
@@ -66,5 +67,11 @@ video {
 
 .fixedheight {
   min-height: 250px; }
+
+.bkimg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -5; }
 
 /*# sourceMappingURL=firststyle.css.map */

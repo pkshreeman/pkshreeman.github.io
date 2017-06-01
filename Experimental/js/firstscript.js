@@ -39,7 +39,23 @@ var ViewModel = {
         "link": "https://drive.google.com/file/d/0B69-mwt8z-vzU2VNaVl5NFpsVlk/view?usp=sharing "
       },
     ]
-  )
+  ),
+  history: ko.observable([
+    {
+      "date": "2017-05",
+      "event": "Recieved Full Stack Web Development Nanodegree",
+      "certificate":""
+    },
+    {
+      "date":"2016-10",
+      "event":"Recieved Front-End Development Certification",
+      "certificate":""
+    },
+    {"date": "2012-08",
+      "event": "Graduated with PhD in Nanoscale Science and Engineering",
+      "certificate":""
+    }
+  ])
 };
 
 function endofvideo() {
