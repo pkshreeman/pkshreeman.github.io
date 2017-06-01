@@ -12,7 +12,7 @@ var model = {
 
     function processor(lat = 38.7293334, long = -121.2751474) {
       //Default lat and long is installed in case there is issue with obtaining location from client
-      JGeo = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + '&lon=' + long + '&units=metric&appid=eb5d3093d7e824e8a57c0037fc66c1ea';
+      JGeo = "https://drpkshreeman.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + '&lon=' + long + '&units=metric&appid=eb5d3093d7e824e8a57c0037fc66c1ea';
       var currentGeoLocation = [lat, long, JGeo];
       console.log("currentGeoLocation at Processor():");
       console.log(currentGeoLocation);
@@ -66,7 +66,7 @@ var model = {
   },
 
   getWiki: function() {
-    var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + ViewModel1.city() + '&format=json';
+    var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + ViewModel1.city() + '&format=json';
     $.ajax({
       url: wikiUrl, //just adding error here.
       dataType: 'jsonp',
@@ -130,7 +130,7 @@ var model = {
 
     function makeMarkerIcon(markerColor) {
       var markerImage = new google.maps.MarkerImage(
-        'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|' + markerColor +
+        'https://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|' + markerColor +
         '|40|_|%E2%80%A2',
         new google.maps.Size(25, 25),
         new google.maps.Point(0, 0),
@@ -307,7 +307,7 @@ var controller = {
 
   weatherize: function(wdata) {
     ViewModel1.temp('Your current temperature is ' + Math.floor(wdata.main.temp * (9 / 5) + 32) + '°F');
-    ViewModel1.iconID("http://openweathermap.org/img/w/" + wdata.weather["0"].icon + ".png");
+    ViewModel1.iconID("https://openweathermap.org/img/w/" + wdata.weather["0"].icon + ".png");
     ViewModel1.weatherdes(wdata.weather[0].description);
   },
 
