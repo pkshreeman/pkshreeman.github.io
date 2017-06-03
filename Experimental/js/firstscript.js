@@ -91,6 +91,52 @@ $('.collaspe').click(function(){
   console.log("The click function of pubrow is triggered");
 });
 
+//https://stackoverflow.com/questions/2905867/how-to-scroll-to-specific-item-using-jquery
+$('#collapseOne').on('shown.bs.collapse', function(){
+window.scrollTo(0, $("#collapseOne").offset().top);
+$('#buttonOne').addClass("active");
+});
+
+$('#collapseTwo').on('shown.bs.collapse', function(){
+window.scrollTo(0, $("#collapseTwo").offset().top);
+$('#buttonTwo').addClass("active");
+});
+
+$('#collapseThree').on('shown.bs.collapse', function(){
+window.scrollTo(0, $("#collapseThree").offset().top);
+$('#buttonThree').addClass("active");
+});
+
+$('#collapseFour').on('shown.bs.collapse', function(){
+window.scrollTo(0, $("#collapseFour").offset().top);
+$('#buttonFour').addClass("active");
+});
+
+$('#collapseFive').on('shown.bs.collapse', function(){
+window.scrollTo(0, $("#collapseFive").offset().top);
+$('#buttonFive').addClass("active");
+});
+
+$('#collapseOne').on('hidden.bs.collapse', function(){
+$('#buttonOne').removeClass("active");
+});
+
+$('#collapseTwo').on('hidden.bs.collapse', function(){
+$('#buttonTwo').removeClass("active");
+});
+
+$('#collapseThree').on('hidden.bs.collapse', function(){
+$('#buttonThree').removeClass("active");
+});
+
+$('#collapseFour').on('hidden.bs.collapse', function(){
+$('#buttonFour').removeClass("active");
+});
+
+$('#collapseFive').on('hidden.bs.collapse', function(){
+$('#buttonFive').removeClass("active");
+});
+
 //https://stackoverflow.com/questions/9048253/in-javascript-if-mobile-phone
 // Code to detect the mobile to enable quote without having to play the video firstvideo
 // Also hid the video...not sure if I want to do that or not.
