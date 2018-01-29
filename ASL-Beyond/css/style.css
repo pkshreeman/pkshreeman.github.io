@@ -19,3 +19,11 @@ h3 {
 img {
     width: 100%;
 }
+
+#email {
+    text-align: center;
+}
+
+#email a {
+    color: white;
+}
